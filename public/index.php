@@ -51,11 +51,8 @@ $existingAnswers = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
     <div class="hidden md:flex w-72 flex-col bg-slate-900 border-r border-slate-800 text-white">
         <!-- Logo Area -->
         <div class="h-16 flex items-center px-6 border-b border-slate-800">
-            <div class="flex items-center gap-2 font-bold text-xl tracking-tight">
-                <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-                    <i data-lucide="shield" class="w-5 h-5 text-white"></i>
-                </div>
-                <span>Purple<span class="text-purple-400">Wasp</span></span>
+            <div class="flex items-center gap-3">
+                <img src="assets/purplewasp-logo.png" alt="PurpleWasp" class="h-10 w-auto" />
             </div>
         </div>
 
@@ -100,7 +97,7 @@ $existingAnswers = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
         
         <!-- Mobile Header -->
         <div class="md:hidden h-16 bg-slate-900 text-white flex items-center px-4 justify-between">
-            <span class="font-bold">PurpleWasp</span>
+            <img src="assets/purplewasp-logo.png" alt="PurpleWasp" class="h-8 w-auto" />
             <span class="text-xs bg-purple-600 px-2 py-1 rounded"><?= $progressPercent ?>%</span>
         </div>
 
